@@ -8,7 +8,8 @@ while True:
     conexion, addr = serverSocket.accept()
     print ('Nueva conexión')
     print (addr)
+    print(conexion)
 
-    conexion.send("Hola desde el serviro") #Envio mensaje al cliente
+    conexion.send(b'Hola desde el servidor') #Envio mensaje al cliente
     conexion.close()
     
